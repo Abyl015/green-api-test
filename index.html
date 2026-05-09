@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GREEN-API Test Task</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="panel">
+      <input id="idInstance" type="text" placeholder="idInstance" />
+      <input id="apiTokenInstance" type="text" placeholder="ApiTokenInstance" />
+
+      <button onclick="getSettings()">getSettings</button>
+      <button onclick="getStateInstance()">getStateInstance</button>
+
+      <input id="chatIdMessage" type="text" placeholder="77771234567@c.us" />
+      <textarea id="message" placeholder="Hello World!"></textarea>
+      <button onclick="sendMessage()">sendMessage</button>
+
+      <input id="chatIdFile" type="text" placeholder="77771234567@c.us" />
+      <input id="fileUrl" type="text" placeholder="https://example.com/file.jpg" />
+      <button onclick="sendFileByUrl()">sendFileByUrl</button>
+    </div>
+
+    <div class="response-box">
+      <label>Ответ:</label>
+      <textarea id="response" readonly></textarea>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
